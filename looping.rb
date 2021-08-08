@@ -1,4 +1,10 @@
 def happy_new_year
+  num = 10
+  until num == 0
+    puts num
+    num-=1
+  end
+  puts "Happy New Year!"
   # your code here
 end
 
@@ -16,9 +22,23 @@ def fizzbuzz(num)
 end
 
 def fizzbuzz_printer
+  num = 0
+  while num < 100
+    num += 1
+    puts fizzbuzz(num)
+  end
   # your code here
 end
 
 def reverse_string(str)
+  newStr=''
+
+  chars=str.split('')
+
+  chars.each { |l|
+    newStr.prepend(l)
+  }
+
+  newStr
   # your code here
 end
